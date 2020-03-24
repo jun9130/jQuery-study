@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery</title>
+</head>
+<body>
+  <div id="message">HTMLで書きました</div>
+  <div class="box">boxクラスです</div>
+  <script src="jquery.min.js"></script>
+  <script>
+    // $('#message').html('jQueryで書き換えました')
+    document.getElementById('message').innerHTML = 'JavaScriptで書き換えました';
+  </script>
+</body>
+</html>
