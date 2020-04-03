@@ -3,23 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>jQuery</title>
+  <style>
+    .box {
+      width: 200px;
+      height: 200px;
+      background-color: #fcc;
+      padding: 10px;
+    }
+  </style>
 </head>
 <body>
-  <p>jQueryの練習</p>
-  <button>Add!</button>
-  </select>
+  <div>
+    <button id='fadeOut'>fadeOut</button>
+  </div>
+  <div class='box'>box</div>
+
   <script src="jquery.min.js"></script>
   <script>
-  $(function(){
-    $('button').click(function(){
-      var p = $('<p>').text('vanish!').addClass('vanish');
-      $(this).before(p);
+    $('#fadeOut').on('click', function() {
+      $('.box').fadeOut();
     });
-    $('body').on(click(function(){
-      $(this).remove();
-    });
-  });
-</script>
+  </script>
 </body>
 </html>
