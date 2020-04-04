@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>jQuery</title>
+</head>
   <style>
     .box {
       width: 200px;
@@ -15,16 +15,10 @@
   </style>
 </head>
 <body>
-  <div>
-    <button id='fadeOut'>fadeOut</button>
-  </div>
-  <div class='box'>box</div>
-
+  <div class="box">boxクラスです</div>
   <script src="jquery.min.js"></script>
   <script>
-    $('#fadeOut').on('click', function() {
-      $('.box').fadeOut();
-    });
+    $('div').css('margin-top', '100px').filter('.box').html('★').css('background-color', '#fcc').end().css('margin-left', '100px')
   </script>
 </body>
 </html>
